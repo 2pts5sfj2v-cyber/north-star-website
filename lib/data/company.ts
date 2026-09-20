@@ -184,9 +184,8 @@ export const marketplaceTags = [
 ];
 
 export const contactInfo = {
-  email: "contact@northstartrading.example.com",
-  phone: "+1 (XXX) XXX-XXXX",
-  address: "[Street Address], [City], [State] [ZIP], USA",
+  email: "contact@hoomqing.com",
+  address: "1209 Mountain Road Pl NE #11116, Albuquerque, NM 87110, USA",
 };
 
 export const globalFootprint = [
