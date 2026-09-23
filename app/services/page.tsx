@@ -26,12 +26,21 @@ export default function ServicesPage() {
             Twenty battle-tested services across six practice areas — with
             transparent pricing, clear deliverables, and timelines.
           </p>
-          <a
-            href={`mailto:${contactInfo.email}`}
-            className="mt-4 inline-block text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
-          >
-            {contactInfo.email}
-          </a>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+            <a
+              href={`mailto:${contactInfo.email}`}
+              className="inline-block text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
+            >
+              {contactInfo.email}
+            </a>
+            <span className="text-sm text-slate-500">·</span>
+            <a
+              href={`mailto:${contactInfo.altEmail}`}
+              className="inline-block text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
+            >
+              {contactInfo.altEmail}
+            </a>
+          </div>
         </div>
       </section>
 

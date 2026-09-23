@@ -40,12 +40,20 @@ export default function ContactPage() {
               <h3 className="mt-4 font-display text-base font-bold text-white">
                 Email Us
               </h3>
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="mt-2 block text-sm text-slate-400 transition hover:text-white"
-              >
-                {contactInfo.email}
-              </a>
+              <div className="mt-2 space-y-1">
+                <a
+                  href={`mailto:${contactInfo.email}`}
+                  className="block text-sm text-slate-400 transition hover:text-white"
+                >
+                  {contactInfo.email}
+                </a>
+                <a
+                  href={`mailto:${contactInfo.altEmail}`}
+                  className="block text-sm text-slate-400 transition hover:text-white"
+                >
+                  {contactInfo.altEmail}
+                </a>
+              </div>
             </div>
 
             <div className="card p-6">

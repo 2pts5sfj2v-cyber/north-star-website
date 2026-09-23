@@ -27,6 +27,13 @@ export default function LeadCapture() {
                 className="font-semibold text-emerald-400 hover:text-emerald-300"
               >
                 {contactInfo.email}
+              </a>{" "}
+              or{" "}
+              <a
+                href={`mailto:${contactInfo.altEmail}`}
+                className="font-semibold text-emerald-400 hover:text-emerald-300"
+              >
+                {contactInfo.altEmail}
               </a>
               .
             </p>

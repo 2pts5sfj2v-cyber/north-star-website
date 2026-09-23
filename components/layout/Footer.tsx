@@ -42,13 +42,22 @@ export default function Footer() {
               e-commerce veterans. We deliver battle-tested strategy, store
               operations, supply chain resilience, and global market expansion.
             </p>
-            <a
-              href={`mailto:${contactInfo.email}`}
-              className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
-            >
-              <Mail className="h-4 w-4" />
-              {contactInfo.email}
-            </a>
+            <div className="mt-5 space-y-2">
+              <a
+                href={`mailto:${contactInfo.email}`}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
+              >
+                <Mail className="h-4 w-4" />
+                {contactInfo.email}
+              </a>
+              <a
+                href={`mailto:${contactInfo.altEmail}`}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
+              >
+                <Mail className="h-4 w-4" />
+                {contactInfo.altEmail}
+              </a>
+            </div>
             <p className="mt-3 flex items-start gap-2 text-sm leading-relaxed text-slate-400">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-slate-500" />
               {contactInfo.address}
@@ -114,12 +123,20 @@ export default function Footer() {
           <p className="text-xs text-slate-500">
             © {year} North Star Trading LLC. All rights reserved.
           </p>
-          <a
-            href={`mailto:${contactInfo.email}`}
-            className="text-xs text-slate-500 transition hover:text-slate-300"
-          >
-            {contactInfo.email}
-          </a>
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            <a
+              href={`mailto:${contactInfo.email}`}
+              className="text-xs text-slate-500 transition hover:text-slate-300"
+            >
+              {contactInfo.email}
+            </a>
+            <a
+              href={`mailto:${contactInfo.altEmail}`}
+              className="text-xs text-slate-500 transition hover:text-slate-300"
+            >
+              {contactInfo.altEmail}
+            </a>
+          </div>
         </div>
 
         <p className="mt-6 text-[11px] leading-relaxed text-slate-600">
