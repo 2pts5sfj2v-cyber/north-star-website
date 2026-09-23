@@ -184,8 +184,7 @@ export const marketplaceTags = [
 ];
 
 export const contactInfo = {
-  email: "contact@hoomqing.com",
-  altEmail: "admin@northstartradings.com",
+  email: "admin@northstartradings.com",
   address: "1209 Mountain Road Pl NE #11116, Albuquerque, NM 87110, USA",
 };
 
